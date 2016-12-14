@@ -1,0 +1,203 @@
+/*=========*/
+/*  RESET  */
+/*=========*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*---------------------------------------*/
+
+/*===========*/
+/*  GENERAL  */
+/*===========*/
+body{
+  background-color: #9A9A9A;
+}
+p{
+  font-family: 'Mirza', cursive;
+  font-size: 23px;
+  margin: 0.5%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+/*---------------------------------------*/
+@media all and (min-width: 801px) and (max-width: 1920px) {
+/*=======*/
+/*  NAV  */
+/*=======*/
+  nav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgba(225, 207, 187, 0.5);
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    list-style: none;
+  }
+  li{
+    list-style: none;
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    background-color: rgba(202, 202, 202, 0.8);
+    border: 2px solid black;
+    border-radius: 60%;
+    padding: 8%;
+    font-size: 25px;
+    color: black;
+  }
+/* HOVER DES BOUTONS DE LA NAV */
+  .accueil:hover{
+    color: white;
+    background-color: rgba(253, 160, 41, 0.8);
+  }
+  .accrobranche:hover{
+    color: white;
+    background-color: rgba(11, 187, 0, 0.8);
+  }
+  .skatepark:hover{
+    color: white;
+    background-color: rgba(13, 176, 195, 0.8);
+  }
+  .bistrot:hover{
+    color: white;
+    background-color: rgba(224, 204, 22, 0.8);
+  }
+  .evenement:hover{
+    color: white;
+    background-color: rgba(252, 42, 33, 0.8);
+  }
+  .anniversaire:hover{
+    color: white;
+    background-color: rgba(220, 63, 209, 0.8);
+  }
+/*---------------------------------------*/
+
+/*==========*/
+/*  HEADER  */
+/*==========*/
+  header{
+    background-image: url('../images/bgbody.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 4px solid #FB7826;
+    text-shadow: 4.5px 4.5px 1px black;
+  }
+  h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding: 8%;
+    font-size: 80px;
+    color: #FB7826;
+  }
+/*---------------------------------------*/
+
+/*========*/
+/*  MAIN  */
+/*========*/
+  main{
+    background-color: #9A9A9A;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  section{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #CACACA;
+  }
+  article{
+
+    height: 270px;
+    text-align: justify;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .txt_sec, .txt_sec1{
+    flex: 2;
+  }
+  .img_txt, .calendrier, .menu{
+    flex: 1;
+  }
+/* ARTICLLE BORDER LEFT/RIGT IMG */
+  .img_txt{
+    border-right: 3px solid #FB7826;
+  }
+  .calendrier{
+    border-left: 3px solid #FB7826;
+  }
+  .menu{
+    border-right: 3px solid #FB7826;
+  }
+/* SECTION BORDER TOP/BOTTOM*/
+  .section1{
+    border-top: 3px solid #FB7826;
+  }
+  .section2{
+    border-top: 3px solid #FB7826;
+    border-bottom: 3px solid #FB7826;
+  }
+  .section3{
+    border-bottom: 3px solid #FB7826;
+  }
+/*---------------------------------------*/
+
+/*===============*/
+/*  SECTION MAP  */
+/*===============*/
+  .maps{
+    border-top: 3px solid #FB7826;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+  }
+  .div_map{
+    background-color: #9A9A9A;
+  }
+/*---------------------------------------*/
+
+/*==========*/
+/*  FOOTER  */
+/*==========*/
+  footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #585858;
+    font-size: 18px;
+  }
+  footer{
+    color: #FB7826;
+    font-family: 'Mirza', cursive;
+  }
+  .info{
+    background-color: inherit;
+  }
+  .fc{
+    border: none;
+    background-color: inherit;
+  }
+  hr{
+    color: white;
+  }
+  .horraire{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+  .text_horraire1{
+    font-size: 23px;
+  }
+}
