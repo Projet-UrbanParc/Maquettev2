@@ -31,8 +31,9 @@ p{
     position: fixed;
     width: 100%;
     text-align: center;
-    border-radius: 0px 0px 25px 25px;
     background-color: rgba(225, 207, 187, 0.5);
+
+    /* j'ai dégagé le border radius de la nav */
   }
   ul{
     display: flex;
