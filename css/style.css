@@ -12,12 +12,11 @@
 /*  GENERAL  */
 /*===========*/
 body{
-  background-color: #9A9A9A;
+  /*background-color: #222;*/
 }
 p{
   font-family: 'Mirza', cursive;
   font-size: 23px;
-  margin: 0.5%;
 }
 .container{
   display: flex;
@@ -52,7 +51,7 @@ p{
     font-family: 'Lobster', cursive;
     background-color: rgba(202, 202, 202, 0.8);
     border: 2px solid black;
-    border-radius: 60%;
+    border-radius: 30%;
     padding: 8%;
     font-size: 25px;
     color: black;
@@ -64,7 +63,7 @@ p{
   }
   .accrobranche:hover{
     color: white;
-    background-color: rgba(11, 187, 0, 0.8);
+    background-color: rgba(75, 163, 60, 0.8);
   }
   .skatepark:hover{
     color: white;
@@ -107,51 +106,52 @@ p{
 /*  MAIN  */
 /*========*/
   main{
-    background-color: #9A9A9A;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   section{
     display: flex;
+    margin: auto;
+    height: auto;
+    width: 60%;
     flex-direction: row;
-
-    background-color: #CACACA;
+    margin-top: 30px;
+    /*background-color: #F8F3D1;*/
   }
   article{
-
     height: 270px;
-    text-align: justify;
+    padding: 2%;
   }
   img{
     height: 100%;
     width: 100%;
   }
   .txt_sec, .txt_sec1{
-    flex: 2;
+    flex: 1;
   }
   .img_txt, .calendrier, .menu{
-    flex: 1;
+    flex: 2;
   }
 /* ARTICLLE BORDER LEFT/RIGT IMG */
   .img_txt{
-    border-right: 3px solid #FB7826;
+    border-right: 2px solid #fff;
   }
   .calendrier{
-    border-left: 3px solid #FB7826;
+    border-left: 2px solid #fff;
   }
   .menu{
-    border-right: 3px solid #FB7826;
+    border-right: 2px solid #fff;
   }
 /* SECTION BORDER TOP/BOTTOM*/
   .section1{
-    border-top: 3px solid #FB7826;
+    border-top: 2px solid #fff;
   }
   .section2{
-    border-top: 3px solid #FB7826;
-    border-bottom: 3px solid #FB7826;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   .section3{
-    border-bottom: 3px solid #FB7826;
+    border-bottom: 2px solid #fff;
   }
 /*---------------------------------------*/
 
@@ -161,10 +161,11 @@ p{
   .maps{
     border-top: 3px solid #FB7826;
     border-radius: 10px 10px 0px 0px;
+    height: 400px;
     width: 100%;
   }
   .div_map{
-    background-color: #9A9A9A;
+    width: 100%;
   }
 /*---------------------------------------*/
 
@@ -175,13 +176,12 @@ p{
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-color: #585858;
+    background-color: #222;
     font-size: 18px;
-  }
-  footer{
     color: #FB7826;
     font-family: 'Mirza', cursive;
   }
+/* ICON / PARTENAIRES */
   .info{
     background-color: inherit;
   }
@@ -189,11 +189,21 @@ p{
     border: none;
     background-color: inherit;
   }
+/* HORRAIRE */
   hr{
     color: white;
+    width: 80%;
+    margin: auto;
+  }
+  .hrsection{
+    width: 40%;
+    margin: 60px auto;
+    color: #FB7826;
+    border: 4px solid #FB7826;
   }
   .horraire{
     font-weight: bold;
+    width: 65%;
     margin-top: 20px;
     margin-left: 2%;
   }
