@@ -33,21 +33,37 @@ p{
     text-align: center;
     background-color: rgba(225, 207, 187, 0.5);
 
-    /* j'ai dégagé le border radius de la nav */
+    /* j'ai dégagé le border radius de la nav (Camille) */
   }
   ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2%;
+
+    height: 100%;
     width: 100%;
+
+    padding: 2%;
     list-style: none;
+
   }
   li{
+    height: 100%;
+    width: 100%;   /* Ajout de taille pour les border (Camille) */
+
     list-style: none;
     font-size: 20px;
+
+    border-right: 2px solid #FB7826; /* Ajout de la border  (Camille) */
+  }
+  li:last-child{
+
+    border: none;   /* On retire la derniere border pour plus de style (Camille) */
   }
   a{
+    height: 100%;
+    width: 100%;
+
     text-decoration: none;
     font-family: 'Lobster', cursive;
     background-color: rgba(202, 202, 202, 0.8);
@@ -133,7 +149,7 @@ p{
   .img_txt, .calendrier, .menu{
     flex: 2;
   }
-/* ARTICLLE BORDER LEFT/RIGT IMG */
+/* ARTICLE BORDER LEFT/RIGHT IMG */
   .img_txt{
     border-right: 2px solid #fff;
   }
@@ -213,7 +229,7 @@ p{
   }
 }
 
-/*---------------------------------------------*/
+/*---------------------------------------------  (Camille)  */
 
 /*============*/
 /* Animation */
