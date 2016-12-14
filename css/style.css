@@ -211,3 +211,49 @@ p{
     font-size: 23px;
   }
 }
+
+/*---------------------------------------------*/
+
+/*============*/
+/* Animation */
+/*==========*/
+
+.box-active {
+  animation-name: translateInRight;
+  animation-duration: 5s;
+  animation-iteration-count: revert;
+}
+.box-active2 {
+  animation-name: translateInLeft;
+  animation-duration: 4s;
+  animation-iteration-count: revert;
+}
+
+@keyframes translateInRight {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(+150%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes translateInLeft {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(-175%)
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
