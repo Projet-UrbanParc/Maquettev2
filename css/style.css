@@ -281,7 +281,7 @@ display: none;
 
    border: none;   /* On retire la derniere border pour plus de style (Camille) */
 }
-  a{
+nav  a{
     text-decoration: none;
     font-family: 'Lobster', cursive;
     background-color: rgba(202, 202, 202, 0.8);
@@ -353,18 +353,28 @@ display: none;
     display: flex;
     margin: auto;
     height: auto;
-    width: 60%;
+    width: 70%;
     flex-direction: row;
     margin-top: 30px;
     /*background-color: #F8F3D1;*/
   }
+
   article{
+    justify-content: space-around;
+    flex-direction: column;
     height: 270px;
     padding: 2%;
+    display: flex;
   }
+
+  h2{
+    font-family: 'Lobster', cursive;
+  }
+
   img{
     height: 100%;
     width: 100%;
+    box-shadow: 10px 10px 5px #888888;
   }
   .hrsection{
     width: 40%;
@@ -409,7 +419,19 @@ display: none;
   }
 /* ICON / PARTENAIRES */
   .info{
+    width: 10%;
     background-color: inherit;
+  }
+  .fa{
+    color:#FB7826;
+  }
+
+  .fa-facebook-official{
+    margin-top: 5em;
+  }
+  .fa-facebook-official:hover{
+    color: #395794;
+    transition: 1s;
   }
   .fc{
     border: none;
@@ -421,20 +443,80 @@ display: none;
     width: 80%;
     margin: auto;
   }
-  .horraire{
-    font-weight: bold;
-    width: 65%;
-    margin-top: 20px;
+  .AdresseNum{
+    display: flex;
+    flex-direction: column;
+    width:25%;
     margin-left: 2%;
+    border-right: 3px solid #FB7826;
+    border-left: 3px solid #FB7826;
+  }
+  .AdresseNum p{
+    margin: 2%;
+    color: white;
+  }
+  .AdresseNum article{
+    height: 100px;
+    margin: 1.5em;
+  }
+  .horraire{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 80px;
+    margin-left: 5em;
+    border: 3px solid white;
+    border-radius: 15px;
   }
   .text_horraire1{
     font-size: 23px;
   }
-/*Formulaire*/
+/*----------------*/
+/* Formulaire */
+
+form{
+  margin-left: 5em;
+}
+
+label{
+  margin-top: 1em;
+}
+.formulaire{
+  width: 20%;
+}
+.form{
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+font-size: 25px;
+}
+.form input{
+  border: 3px solid #FB7826;
+  border-radius: 5px;
+}
+.labelnom, .labelprenom, .labelemail{
+  width: 15em;
+  height: 2em;
+}
+.labelmessage{
+  border: 3px solid #FB7826;
+  border-radius: 8px;
+}
+.envoyer{
+  height: 3em;
+  width: 8em;
+  margin-top: 2.5em;
+  border-radius: 5%;
+  border: 2px solid #FFF;
+  background-color: #FB7826;
+  color: #FFF;
+}
+
   #valeur{
-    height: 100px;
-    width: 300px;
+    height: 12em;
+    width: 25em;
   }
+
 }
 
 
