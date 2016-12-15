@@ -9,6 +9,9 @@
   <!-- FONT POLICE GOOGLE -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/calendar.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
@@ -70,8 +73,15 @@
               </article>
             <!-- ARTICLE CALENDRIER -->
               <article class="calendrier">
-                  <img src="images/calendrier_brouillon.jpg" alt="Calendrier Test">
-              </article>
+                <div id="calendar">
+                </div> <!-- Calendrier -->
+                <div id="dialog" title="Réservation"> <!-- Pop up de reservation -->
+                   <label id="reserv" for="from">Date de réservation</label>
+                   <input type="text" id="from" name="from" value="">
+                   <div class="horaire" id="first">14h/16h</div>
+                   <div class="horaire" id="second">16h/18h</div>
+                   <input type="button" id="validate" value="Valider">
+                </div>
           </section>
           <hr class="hrsection"/>
       <!-- SECTION III -->
@@ -100,49 +110,52 @@
       </section>
       <footer>
         <!-- HORRAIRE -->
-          <div class="horraire">
+          <section class="horraire">
             <p>LUNDI <br/>11h-14h<br/><hr></hr><br/><span class="text_horraire1">MARDI - JEUDI - VENDREDI<br/>
-              11h-14h - 17h-21h<br/><hr></hr><br/>MERCREDI - SAMEDI <br/>12h-19h<hr></hr>DIMANCHE<br/>
-              13h-19h<br/><hr></hr><br/>VACANCES SCOLAIRES<br/>Tous les jours 11h-19h</span>
+              11h-14h - 17h-21h<br/><hr></hr>MERCREDI - SAMEDI <br/>12h-19h<hr></hr>DIMANCHE<br/>
+              13h-19h<br/><hr></hr>VACANCES SCOLAIRES<br/>Tous les jours 11h-19h</span>
             </p>
-          </div>
-        <!-- INFO/FB/PARTENAIRE(?) -->
-          <section class="info">
-              <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official" style="font-size:48px"></i></a>
           </section>
         <!-- ADRESSE/NUMERO/EMAIL -->
-          <section>
+          <section class="AdresseNum">
             <!-- ADRESSE -->
               <article class="adresse">
-
+                <i class="fa fa-map-marker" aria-hidden="true" style="font-size:48px"><p>17 Rue Marcel Paul<br/>30100 Alès</p></i>
               </article>
             <!-- NUMERO -->
               <article class="numero">
-
+                <i class="fa fa-phone-square" aria-hidden="true" style="font-size:48px"><p>04 66 43 35 76</p></i>
               </article>
             <!-- EMAIL -->
               <article class="email">
-
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size:48px"><p>urbanparc.ales@gmail.com</p></i>
               </article>
-
+            </section>
+            <section class="formulaire">
             <!--FORMULAIRE-->
             <form action="">
-              Nom:<br>
-              <input type="text" name="firstname" value="nom">
-              <br>
-              Prenom:<br>
-              <input type="text" name="lastname" value="prenom">
-              <br><br>
-              Email:<br>
-              <input type="text" name="email" value="email">
-              <br><br>
-              <p><label>Message</label></p>
-              <textarea id="valeur" name="Message" type="text"></textarea><br/>
-              <input type="Submit" value="Envoyer">
+              <div class="form">
+                Nom:<br>
+                <input type="text" name="firstname" value="nom" placeholder="Nom.." class="labelnom">
+                <br>
+                Prenom:<br>
+                <input type="text" name="lastname" value="prenom" placeholder="Prenom.." class="labelprenom">
+                <br><br>
+                Email:<br>
+                <input type="text" name="email" value="email" placeholder="xyz@gmail.com.." class="labelemail">
+                <br><br>
+                <label>Message</label>
+                <textarea id="valeur" name="Message" type="text" placeholder="Votre Message.." class="labelmessage"></textarea><br/>
+                <input type="Submit" class="envoyer" value="Envoyer">
+              </div>
             </form>
-              </form>
+          </section>
+        <!-- INFO/FB/PARTENAIRE(?) -->
+          <section class="info">
+             <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official" style="font-size:48px"></i></a>
           </section>
       </footer>
-    <script type="text/javascript" src="js/horscontexte.js"></script>
+      <script type="text/javascript" src="js/horscontexte.js"></script>
+      <script type="text/javascript" src="js/calendrier.js"></script>
   </body>
 </html>
