@@ -9,9 +9,15 @@
   <!-- FONT POLICE GOOGLE -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/calendar.css">
+    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    
   </head>
   <body>
     <div class="container">
@@ -70,7 +76,15 @@
               </article>
             <!-- ARTICLE CALENDRIER -->
               <article class="calendrier">
-                  <img src="images/calendrier_brouillon.jpg" alt="Calendrier Test">
+                  <div id="calendar">
+                  </div> <!-- Calendrier -->
+                  <div id="dialog" title="Réservation"> <!-- Pop up de reservation -->
+                     <label id="reserv" for="from">Date de réservation</label>
+                     <input type="text" id="from" name="from" value="">
+                     <div class="horaire" id="first">14h/16h</div>
+                     <div class="horaire" id="second">16h/18h</div>
+                     <input type="button" id="validate" value="Valider">
+                  </div>
               </article>
           </section>
           <hr class="hrsection"/>
@@ -144,5 +158,6 @@
           </section>
       </footer>
     <script type="text/javascript" src="js/horscontexte.js"></script>
+    <script type="text/javascript" src="js/calendrier.js"></script>
   </body>
 </html>
