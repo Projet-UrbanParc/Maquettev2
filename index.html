@@ -9,28 +9,37 @@
   <!-- FONT POLICE GOOGLE -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
     <div class="container">
   <!-- BARRE DE NAVIGATION -->
       <nav>
           <ul>
-              <li><a href="#" class="accueil">Accueil</a></li>
-              <li><a href="#" class="accrobranche">Accrobranche</a></li>
-              <li><a href="#" class="skatepark">SkatePark</a></li>
-              <li><a href="#" class="bistrot">Bistrot</a></li>
-              <li><a href="#" class="evenement">Evènement</a></li>
-              <li><a href="#" class="anniversaire">Anniversaire</a></li>
+              <li><a id='link1' href="#" class="accueil">Accueil</a></li>
+              <li><a id='link2' href="#" class="accrobranche">Accrobranche</a></li>
+              <li><a id='link3' href="#" class="skatepark">SkatePark</a></li>
+              <li><a id='link4' href="#" class="bistrot">Bistrot</a></li>
+              <li><a id='link5' href="#" class="evenement">Evènement</a></li>               <!-- Ajout des #link pour le JavaScript (Camille) -->
+              <li><a id='link6' href="#" class="anniversaire">Anniversaire</a></li>
           </ul>
       </nav>
+  <!-- BURGER RESPONSIVE PORTABLE-->
+      <div class="btn-navigation">
+          <div class="barre"></div>
+          <div class="barre"></div>
+          <div class="barre"></div>
+      </div>
   <!-- HEADER -->
       <header>
-          <h1>Urban Park</h1>
+          <h1><span class="titreH">U</span>rban <span class="titreH">P</span>ark</h1>
       </header>
   <!-- MAIN -->
       <main>
       <!-- SECTION I -->
-          <section class="section1">
+          <section id='section1' class="section1">
             <!-- ARTICLE IMAGE -->
                 <article class="img_txt">
                     <img src="images/Urban_Park-50.jpg" alt="Image Test">
@@ -48,7 +57,7 @@
           </section>
           <hr class="hrsection"/>
       <!-- SECTION II -->
-          <section class="section2">
+          <section id='section2' class="section2">
             <!-- ARTICLE TEXTE -->
               <article class="txt_sec">
                   <h2>TITRE</h2>
@@ -66,7 +75,7 @@
           </section>
           <hr class="hrsection"/>
       <!-- SECTION III -->
-          <section class="section3">
+          <section id='section3' class="section3">
             <!-- ARTICLE MENU-->
               <article class="menu">
                 <img src="images/Urban_Park-8.jpg" alt="Menu Test">
@@ -115,7 +124,25 @@
               <article class="email">
 
               </article>
+
+            <!--FORMULAIRE-->
+            <form action="">
+              Nom:<br>
+              <input type="text" name="firstname" value="nom">
+              <br>
+              Prenom:<br>
+              <input type="text" name="lastname" value="prenom">
+              <br><br>
+              Email:<br>
+              <input type="text" name="email" value="email">
+              <br><br>
+              <p><label>Message</label></p>
+              <textarea id="valeur" name="Message" type="text"></textarea><br/>
+              <input type="Submit" value="Envoyer">
+            </form>
+              </form>
           </section>
       </footer>
+    <script type="text/javascript" src="js/horscontexte.js"></script>
   </body>
 </html>

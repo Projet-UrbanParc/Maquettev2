@@ -13,7 +13,12 @@
 /*===========*/
 body{
   /*background-color: #222;*/
+  background-color: #F8F8EC;
 }
+/*@font-face {
+ font-family: "whoa";
+ src: url("whoa.ttf");
+}*/
 p{
   font-family: 'Mirza', cursive;
   font-size: 23px;
@@ -22,8 +27,232 @@ p{
   display: flex;
   flex-direction: column;
 }
-/*---------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 320px and max-width: 800px)  */
+/*=========================================================*/
+
+@media all and (min-width: 320px) and (max-width: 800px) {
+
+/*==========*/
+/*  HEADER  */
+/*==========*/
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: url('../images/uplogo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1{
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 1px 2px #000;
+    font-size: 36px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+/* HOVER DES BOUTONS DE LA NAV */
+  .accueil:hover{
+    color: rgba(253, 160, 41, 0.8);
+  }
+  .accrobranche:hover{
+    color: rgba(75, 163, 60, 0.8);
+  }
+  .skatepark:hover{
+    color: rgba(13, 176, 195, 0.8);
+  }
+  .bistrot:hover{
+    color: rgba(224, 204, 22, 0.8);
+  }
+  .evenement:hover{
+    color: rgba(252, 42, 33, 0.8);
+  }
+  .anniversaire:hover{
+    color: rgba(220, 63, 209, 0.8);
+  }
+/*------------------------------------------------*/
+
+/*===============*/
+/*  MENU BURGER  */
+/*===============*/
+
+  .btn-navigation{
+    z-index: 6;
+  	position: fixed;
+  	right: 10px;
+  	top: 10px;
+  	z-index: 999;
+  	cursor: pointer;
+  }
+
+  .btn-navigation .barre{
+    z-index: 6;
+  	width: 25px;
+  	height: 4px;
+  	background: #FF6F00;
+  	margin-top: 3px;
+  	transition: background .3s ease-in-out;
+  	-webkit-transition: background .3s ease-in-out;
+  }
+
+  .btn-navigation .barre.white{
+  	background: #FF6F00;
+  }
+
+  nav.isOpen{
+  	transform: translateX(0%);
+  	-webkit-transform: translateX(0%);
+  }
+
+  nav{
+    z-index: 5;
+  	position: fixed;
+  	right: 0;
+    top: 0;
+  	padding: 5px;
+  	background: #333;
+  	width: 40%;
+  	height: 100%;
+  	transition: transform .6s ease-in-out;
+  	-webkit-transition: transform .6s ease-in-out;
+  	transform: translateX(100%);
+  	-webkit-transform: translateX(100%);
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 15px;
+  	top: 140px;
+  	transform: translateY(-50%);
+  	-webkit-transform: translateY(-50%);
+  }
+
+  nav ul li{
+  	list-style: none;
+  	margin: 10px 0;
+  }
+
+  nav ul li a{
+  	text-decoration: none;
+  	color:  #fff;
+  	margin: 10px 0;
+  	font-size: 15px;
+  }
+/*------------------------------------------------*/
+
+/*==================*/
+/*  MILIEU DE PAGE  */
+/*==================*/
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section{
+  display: flex;
+  margin: auto;
+  height: auto;
+  width: 90%;
+  flex-direction: column;
+  margin-top: 10px;
+  /*background-color: #F8F3D1;*/
+}
+article{
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  padding: 2%;
+}
+article p{
+  font-size: 14px;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+.hrsection{
+  width: 60%;
+  margin: 60px auto;
+  color: #FB7826;
+  border: 4px solid #FB7826;
+}
+.txt_sec, .txt_sec1{
+  flex: 1;
+}
+.img_txt, .calendrier, .menu{
+  flex: 2;
+  height: 200px;
+}
+/*------------------------------------------------*/
+
+/*==========*/
+/*  FOOTER  */
+/*==========*/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #353535;
+}
+footer p{
+  text-align: center;
+}
+
+.fa{
+  margin: 15px;
+  font-size: 40px;
+  color: #F17013;
+  cursor: pointer;
+  transition: 1s;
+}
+.fa-map:hover{
+  color: #C7BC00;
+}
+.fa-facebook-official:hover{
+  color: #4862A3;
+}
+.fa-info-circle:hover{
+  color: #C1C2C1;
+}
+.div_map{
+display: none;
+}
+  /* HORRAIRE */
+    hr{
+      color: white;
+      width: 80%;
+      margin: auto;
+    }
+    .horraire{
+      font-weight: bold;
+      width: 75%;
+      margin-top: 10px;
+      margin-left: 2%;
+      text-align: center;
+    }
+    .text_horraire1{
+      font-size: 14px;
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/*=========================================================*/
+/*   RESPONSIVE   (min-width: 801px and max-width: 1920px)  */
+/*=========================================================*/
+
 @media all and (min-width: 801px) and (max-width: 1920px) {
+
 /*=======*/
 /*  NAV  */
 /*=======*/
@@ -31,7 +260,6 @@ p{
     position: fixed;
     width: 100%;
     text-align: center;
-    border-radius: 0px 0px 25px 25px;
     background-color: rgba(225, 207, 187, 0.5);
   }
   ul{
@@ -43,9 +271,16 @@ p{
     list-style: none;
   }
   li{
+    height: 100%;
+    width: 100%;   /* Ajout de taille pour les border (Camille) */
     list-style: none;
     font-size: 20px;
+    border-right: 2px solid #FB7826; /* Ajout de la border  (Camille) */
   }
+  li:last-child{
+
+   border: none;   /* On retire la derniere border pour plus de style (Camille) */
+}
   a{
     text-decoration: none;
     font-family: 'Lobster', cursive;
@@ -56,6 +291,7 @@ p{
     font-size: 25px;
     color: black;
   }
+
 /* HOVER DES BOUTONS DE LA NAV */
   .accueil:hover{
     color: white;
@@ -95,10 +331,14 @@ p{
   }
   h1{
     text-align: center;
-    font-family: 'Lobster', cursive;
     padding: 8%;
     font-size: 80px;
+    font-family: 'Lobster';
+    letter-spacing: 2px;
     color: #FB7826;
+  }
+  .titreH{
+    font-size: 180px;
   }
 /*---------------------------------------*/
 
@@ -126,33 +366,19 @@ p{
     height: 100%;
     width: 100%;
   }
-  .txt_sec, .txt_sec1{
-    flex: 1;
+  .hrsection{
+    width: 40%;
+    margin: 60px auto;
+    color: #FB7826;
+    border: 4px solid #FB7826;
   }
-  .img_txt, .calendrier, .menu{
+  .txt_sec, .txt_sec1{
     flex: 2;
   }
-/* ARTICLLE BORDER LEFT/RIGT IMG */
-  .img_txt{
-    border-right: 2px solid #fff;
+  .img_txt, .calendrier, .menu{
+    flex: 1;
   }
-  .calendrier{
-    border-left: 2px solid #fff;
-  }
-  .menu{
-    border-right: 2px solid #fff;
-  }
-/* SECTION BORDER TOP/BOTTOM*/
-  .section1{
-    border-top: 2px solid #fff;
-  }
-  .section2{
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-  }
-  .section3{
-    border-bottom: 2px solid #fff;
-  }
+
 /*---------------------------------------*/
 
 /*===============*/
@@ -195,12 +421,6 @@ p{
     width: 80%;
     margin: auto;
   }
-  .hrsection{
-    width: 40%;
-    margin: 60px auto;
-    color: #FB7826;
-    border: 4px solid #FB7826;
-  }
   .horraire{
     font-weight: bold;
     width: 65%;
@@ -209,5 +429,57 @@ p{
   }
   .text_horraire1{
     font-size: 23px;
+  }
+/*Formulaire*/
+  #valeur{
+    height: 100px;
+    width: 300px;
+  }
+}
+
+
+/*---------------------------------------------  (Camille)  */
+
+/*============*/
+/* Animation */
+/*==========*/
+
+.box-active {
+  animation-name: translateInRight;
+  animation-duration: 5s;
+  animation-iteration-count: revert;
+}
+.box-active2 {
+  animation-name: translateInLeft;
+  animation-duration: 4s;
+  animation-iteration-count: revert;
+}
+
+@keyframes translateInRight {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(+150%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes translateInLeft {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+
+  50% {
+    transform: translateX(-175%)
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
