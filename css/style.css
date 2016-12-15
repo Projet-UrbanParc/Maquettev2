@@ -317,6 +317,13 @@ display: none;
     color: white;
     background-color: rgba(220, 63, 209, 0.8);
   }
+
+/* Bouton Mute */
+  .fa-bell-slash{
+    color: #FB7826;
+    cursor: pointer;
+  }
+/*---------------------------------------*/
 /*---------------------------------------*/
 
 /*==========*/

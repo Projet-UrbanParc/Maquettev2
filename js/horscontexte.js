@@ -137,3 +137,5 @@ document.getElementById('link6').onclick = function()
       eventType: "click",
       playType: "oneShotMonophonic"
     });
+    //Mute
+    
