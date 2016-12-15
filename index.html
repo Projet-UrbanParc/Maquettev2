@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.easyaudioeffects.1.0.0.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </head>
   <body>
@@ -95,7 +96,7 @@
       </main>
     <!-- GOOGLE MAP -->
       </div>
-      <section class="div_map">
+      <section class="div_map"> <!--Why?!!! (Alex)-->
          <iframe class="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE&q=Urban+Parc,Ales+FR" allowfullscreen></iframe>
       </section>
       <footer>
@@ -137,12 +138,12 @@
               <input type="text" name="email" value="email">
               <br><br>
               <p><label>Message</label></p>
-              <textarea id="valeur" name="Message" type="text"></textarea><br/>
+              <textarea id="valeur" name="Message" type="text"></textarea><br/> <!--id valeur useless il n'y a qu'un seul textarea (Alex)-->
               <input type="Submit" value="Envoyer">
             </form>
               </form>
           </section>
       </footer>
-    <script type="text/javascript" src="js/horscontexte.js"></script>
+    <script type="text/javascript" src="js/horscontexte.js"></script> <!-- On peut pas mettre le script dans le head vu qu'il est appelé d'un fichier à part? (Alex)-->
   </body>
 </html>
